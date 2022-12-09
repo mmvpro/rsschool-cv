@@ -46,3 +46,33 @@ let str =
 
 console.log(str.flip());
 ~~~
+### EXPERIENCE
+
+**Company A
+<br>
+Front-End developer, Desember 2022** – *present*
+- Programming and watching cat videos.
+- Created websites with Bootstrap and other CSS frameworks.
+
+### EDUCATION
+
+- **Aviation College, 1998 <br>
+    Organizatin of traffic of flights in air transport**
+
+        GPA 3.7 / 4
+        Excellence Scholarship award, spring 1998.
+        Dean’s list student, fall 1997 - spring 1998.
+        Winner of football championship, spring 1995.
+
+- **FreeCodeCam***<br>
+JavaScript Algorithms and Data Structures,Responsive Web Design
+- **RollingScopesSchool** (*in progress*)
+
+### LANGUAGES
+~~~
+English - Intermediate (*in progress*) 
+Ukrainian - Intermediate 
+Polish - Intermediate 
+Belarusian - Elementary 
+Russian - Elementary
+~~~
