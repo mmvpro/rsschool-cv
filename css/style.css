@@ -117,6 +117,7 @@ nav li:not(:last-child) {
   max-width: 960px;
   background-color: hsl(24, 20%, 95%);
 }
+
 .flex-container {
   display: flex;
 }
@@ -209,4 +210,22 @@ footer {
     #917af0 75%,
     #f5f2f0 90%
   );
+}
+
+.code-container {
+  width: 45%;
+  /* max-width: 420px;
+  min-width: 300px; */
+}
+
+.section-left {
+  padding-left: 10px;
+  width: 45%;
+  /* max-width: 360px;
+  min-width: 300px; */
+  /* border: 1px solid rebeccapurple; */
+}
+
+.section-left span {
+  font-weight: 700;
 }
