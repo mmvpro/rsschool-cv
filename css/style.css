@@ -232,3 +232,46 @@ footer {
 .section-left span {
   font-weight: 700;
 }
+
+@media screen and (max-width: 770px) {
+  .flex-sb-container {
+    flex-direction: column-reverse;
+  }
+
+  .section-left,
+  .code-container {
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .about.flex-container {
+    flex-direction: column;
+  }
+
+  .about {
+    padding-top: 0;
+  }
+
+  .about-container {
+    width: 98%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  .about__foto {
+    margin: 0 auto;
+  }
+
+  nav.flex-container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  nav li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
