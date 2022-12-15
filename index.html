@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/prism.css">
     <title>CV</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
   </head>
@@ -70,19 +71,67 @@
       </header>
       <!-- Header end-->
       <!-- Main start -->
+      <main>
+        <div class="container">
+          <!-- Code section start -->
+          <section class="code-container" id="code">
+            <h2>Code Example</h2>
+            <pre><code class="language-javascript" data-prismjs-copy="Сopy me" data-prismjs-copy-success="I've been copied!">// String Method - flip()
+
+String.prototype.flip = function () {
+
+  let str = this;
+  let end = "";
+  let punctuaction = /[?.!]/;
+
+  str = str.replace(
+    "You likely already know what this is?",""
+   );
+
+   let matches = str.match(punctuaction);
+
+   if (matches) {
+        end = matches[0];
+        str = str.replace(end, "");
+    }
+
+  return str.split("").reverse().join("") + end;
+};
+
+let str =
+"You likely already know what this is?" +
+"3102 ecnis ytinummoc repoleved sepocS " +
+"gnilloR ehT yb detcudnoc margorp " +
+"noitacude desab-ytinummoc dna " +
+"egrahc-fo-eerf si loohcS SR!";
+
+console.log(str.flip());
+</code></pre>
+          </section>
+          <!-- Code section end -->
+          <div class="section-left">
+            <!-- Skills section start -->
+            <section class="section" id="skills"></section>
+            <!-- Skills section end -->
+          </div>
+        </div>
+      </main>
       <!-- Main end -->
-      <!-- Footer -->
+      <!-- Footer start-->
       <footer class="container">
         <a href="https://github.com/mmvpro"> © 2022 mmvpro </a>
         <a href="https://rs.school/js/">
+          <!--prettier-ignore  -->
           <img
             src="https://rs.school/images/rs_school_js.svg"
             height="50"
             width="50"
             alt="rs-chool logo"
-          />
+          >
         </a>
       </footer>
+      <!-- Footer end -->
     </div>
+    <script src="./js/prism.js"></script>
   </body>
 </html>
