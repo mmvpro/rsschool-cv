@@ -68,6 +68,7 @@ body {
 }
 
 h2 {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 20px;
   border-bottom: 3px solid;
@@ -95,7 +96,7 @@ nav {
 }
 
 nav ul {
-  padding: 10px 0;
+  padding: 20px 0;
   margin: 0;
 }
 
@@ -112,6 +113,10 @@ nav li:hover {
 
 nav li:not(:last-child) {
   margin-right: 42px;
+}
+
+ul {
+  margin: 0;
 }
 
 .container {
@@ -131,10 +136,11 @@ nav li:not(:last-child) {
 }
 
 .about {
-  padding-top: 20px;
+  padding: 20px;
 }
 
 .about-container {
+  padding-top: 20px;
   padding-left: 42px;
 }
 
@@ -246,7 +252,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 610px) {
   .about.flex-container {
     flex-direction: column;
   }
@@ -262,16 +268,21 @@ footer {
   }
 
   .about__foto {
+    padding-top: 10px;
     margin: 0 auto;
   }
 
   nav.flex-container {
     flex-direction: column-reverse;
   }
+
+  .contacts-container {
+    padding-bottom: 10px;
+  }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
   nav li:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 5px;
   }
 }
