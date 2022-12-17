@@ -227,6 +227,10 @@ footer {
   min-width: 300px; */
 }
 
+.section {
+  padding-bottom: 15px;
+}
+
 .section-left {
   padding-left: 10px;
   width: 45%;
