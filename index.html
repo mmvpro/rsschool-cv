@@ -1,11 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <!-- prettier-ignore -->
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/prism.css">
     <title>CV</title>
-</head>
-<body> 
-</body>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header start -->
+      <header class="container">
+        <!-- Nav start -->
+        <nav class="flex-container">
+          <ul class="flex-container">
+            <li>
+              <a href="#code">Code</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#education">Education</a>
+            </li>
+            <li>
+              <a href="#languages">Languages</a>
+            </li>
+          </ul>
+          <div class="contacts-container">
+            <a
+              class="contacts contacts__mail"
+              href="mailto:dublibum@gmai.com"
+            ></a>
+            <a
+              class="contacts contacts__github"
+              href="https://github.com/mmvpro"
+            ></a>
+            <a
+              class="contacts contacts__discord"
+              href="https://discord.com/users/999524050567176252"
+            ></a>
+          </div>
+        </nav>
+        <!-- Nav end -->
+        <div class="about flex-container">
+          <div class="about__foto">
+            <!-- prettier-ignore -->
+            <img
+            src="./assets/img/avatar.jpg"
+            width="200"
+            height="200"
+            alt="My foto"
+          >
+          </div>
+          <div class="about-container">
+            <h1 class="about__name">Mikhail Bulavski</h1>
+            <h2>Frontend Developer</h2>
+            <p class="about__descr">
+              Web developer with great potential towards being outstanding
+              candidate in this field. Evager to learn latest technologies and
+              confident about facing new challanges. Continuously work towards
+              being professional.
+            </p>
+          </div>
+        </div>
+      </header>
+      <!-- Header end-->
+      <!-- Main start -->
+      <main>
+        <div class="container flex-sb-container">
+          <!-- Code section start -->
+          <section class="code-container" id="code">
+            <h2>Code Example</h2>
+            <pre><code class="language-javascript" data-prismjs-copy="Сopy me" data-prismjs-copy-success="I've been copied!">// String Method - flip()
+
+String.prototype.flip = function () {
+
+  let str = this;
+  let end = "";
+  let punctuaction = /[?.!]/;
+
+  str = str.replace(
+    "You likely already know what this is?",""
+   );
+
+   let matches = str.match(punctuaction);
+
+   if (matches) {
+        end = matches[0];
+        str = str.replace(end, "");
+    }
+
+  return str.split("").reverse().join("") + end;
+};
+
+let str =
+"You likely already know what this is?" +
+"3102 ecnis ytinummoc repoleved sepocS " +
+"gnilloR ehT yb detcudnoc margorp " +
+"noitacude desab-ytinummoc dna " +
+"egrahc-fo-eerf si loohcS SR!";
+
+console.log(str.flip());
+</code></pre>
+          </section>
+          <!-- Code section end -->
+          <div class="section-left">
+            <!-- Skills section start -->
+            <section class="section" id="skills">
+              <h2>Skills</h2>
+              <ul>
+                <li><span>Languages:</span> JavaScript.</li>
+                <li>
+                  <span>Web development:</span> React, TypeScript, Sass,
+                  WebPack, Gulp, HTML5, CSS3.
+                </li>
+                <li><span>CSS frameworks:</span> Bootstrap</li>
+                <li><span>OS:</span>Ubuntu 20.04</li>
+              </ul>
+            </section>
+            <!-- Skills section end -->
+            <!-- Experience section start -->
+            <section class="section" id="experience">
+              <h2>Experience</h2>
+              <p>
+                <span>Company A</span>
+                2022 - <i>present</i>
+              </p>
+              <ul>
+                <li>Programming and watching cat videos.</li>
+                <li>
+                  Created websites with Bootstrap and other CSS frameworks.
+                </li>
+              </ul>
+            </section>
+            <!-- Experience section end -->
+            <!-- Education section start -->
+            <section class="section" id="education">
+              <h2>Education</h2>
+              <ul>
+                <li>
+                  <!-- prettier-ignore -->
+                  <span>Aviation College</span> 1998<br>
+                  <span>
+                    Organizatin of traffic of flights in air transport
+                  </span>
+                  <ul>
+                    <li>GPA 3.7 / 4</li>
+                    <li>Excellence Scholarship award, spring 1998.</li>
+                    <li>Dean's list student, fall 1997 - spring 1998.</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <span>FreeCodeCam</span>
+                  <ul>
+                    <li>
+                      JavaScript Algorithms and Data Structures,Responsive Web
+                      Design
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span>RollingScopesSchool</span>
+                  <i> in progress</i>
+                </li>
+              </ul>
+            </section>
+            <!-- Education section end -->
+            <!-- Language section start -->
+            <section class="section" id="languages">
+              <h2>Languages</h2>
+              <ul>
+                <li>
+                  <span>English</span>- Intermediate
+                  <i>in progress</i>
+                </li>
+                <li><span>Polish</span>- Intermediate</li>
+                <li><span>Ukrainian</span>- Intermediate</li>
+                <li><span>Russian </span>- Native</li>
+              </ul>
+            </section>
+            <!-- Language section end -->
+          </div>
+        </div>
+      </main>
+      <!-- Main end -->
+      <!-- Footer start-->
+      <footer class="container">
+        <a href="https://github.com/mmvpro"> © 2022 mmvpro </a>
+        <a href="https://rs.school/js/">
+          <!--prettier-ignore  -->
+          <img
+            src="https://rs.school/images/rs_school_js.svg"
+            height="50"
+            width="50"
+            alt="rs-chool logo"
+          >
+        </a>
+      </footer>
+      <!-- Footer end -->
+    </div>
+    <script src="./js/prism.js"></script>
+  </body>
 </html>
